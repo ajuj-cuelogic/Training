@@ -1,0 +1,15 @@
+<h2>{{message}}</h2>
+
+<form ng-submit = "submitForm()">
+    <div>
+        <label>Item Name</label>
+        <input name = "itemName" required ng-model = "obj.itemName"/>
+    </div>
+    <div>
+        <label>Quantity</label>
+        <input name = "quantity" required ng-model = "obj.quantity"/>
+    </div>
+    <div >
+        <button type="submit">Add</button>
+    </div>
+</form>

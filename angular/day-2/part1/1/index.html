@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample App</title>
+    </head>
+    <body ng-app="sampleApp">
+ 
+        <div class="container">
+            <div class="row">
+            <div class="col-md-3">
+                <ul class="nav">
+                    <li><a href="#addNewOrder"> Add New Order </a></li>
+                    <li><a href="#showAllOrders"> Show Order </a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div ng-view></div>
+            </div>
+            </div>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28//angular-route.min.js"></script> -->
+        <script src="app.js"></script>
+
+    </body>
+</html>
