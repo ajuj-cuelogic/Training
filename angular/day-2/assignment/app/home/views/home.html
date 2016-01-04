@@ -27,6 +27,7 @@
                 <td class="cursor-pointer" title="Click to edit record" ng-click="go(this)">{{employee.address}}</td>
                 <td title="" class="text-center" ng-click="deleteRow(this)"><button type="button" class="btn btn-danger">Delete</button></td>
             </tr>
+            <tr ng-show = "employees.length == 0"><td colspan="5" class="no-record">No record found</td></tr>
         </tbody>
     </table>
 </div>

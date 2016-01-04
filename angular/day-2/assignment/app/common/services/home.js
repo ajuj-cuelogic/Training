@@ -11,25 +11,25 @@ function homeService() {
                 'email': 'aju.john@cuelogic.co.in',
                 'name':'Aju John',
                 'address':'Pune',
-                'gender' : 'Male'
+                'gender' : 'male'
             },
             {
                 'email': 'tushar.mate@cuelogic.co.in',
                 'name':'Mate Tushar',
                 'address':'Mumbai',
-                'gender' : 'Male'
+                'gender' : 'male'
             },
             {
                 'email':'shweta@cuelogic.co.in',
                 'name':'Shweta Srivastava',
                 'address':'Allahabad',
-                'gender' : 'Female'
+                'gender' : 'female'
             },
             {
                 'email':'pranav.naxane@cuelogic.co.in',
                 'name':'Pranav Naxane',
                 'address':'Nagpur',
-                'gender' : 'Male'
+                'gender' : 'male'
             }
         ];
     service.get = get;
