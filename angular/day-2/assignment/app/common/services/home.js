@@ -15,7 +15,7 @@ function homeService() {
             },
             {
                 'email': 'tushar.mate@cuelogic.co.in',
-                'name':'Tushar Mate',
+                'name':'Mate Tushar',
                 'address':'Mumbai',
                 'gender' : 'Male'
             },

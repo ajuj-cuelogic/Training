@@ -22,7 +22,9 @@
 .menu:before {
   content: "[";
 }
-
+.cursor-pointer {
+  cursor : pointer;
+}
 .menu:after {
   content: "]";
 }

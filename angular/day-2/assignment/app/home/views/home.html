@@ -21,11 +21,11 @@
         </thead>
         <tbody>
             <tr ng-repeat = "employee in employees | orderBy: sortVal">
-                <td ng-click="go(this)">{{employee.name}}</td>
-                <td ng-click="go(this)">{{employee.email}}</td>
-                <td ng-click="go(this)">{{employee.gender | uppercase}}</td>
-                <td ng-click="go(this)">{{employee.address}}</td>
-                <td class="text-center" ng-click="deleteRow(this)"><button type="button" class="btn btn-danger">Delete</button></td>
+                <td class="cursor-pointer" title="Click to edit record" ng-click="go(this)">{{employee.name}}</td>
+                <td class="cursor-pointer" title="Click to edit record" ng-click="go(this)">{{employee.email}}</td>
+                <td class="cursor-pointer" title="Click to edit record" ng-click="go(this)">{{employee.gender | uppercase}}</td>
+                <td class="cursor-pointer" title="Click to edit record" ng-click="go(this)">{{employee.address}}</td>
+                <td title="" class="text-center" ng-click="deleteRow(this)"><button type="button" class="btn btn-danger">Delete</button></td>
             </tr>
         </tbody>
     </table>
