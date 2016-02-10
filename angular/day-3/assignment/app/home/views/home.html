@@ -1,0 +1,35 @@
+<br/>
+<div class="container">
+<h2>List of Employees<a type="button" class="btn btn-primary pull-right" ng-href="#/add">Add New Employee</a></h2>
+<div class="row">
+    <select ng-model="sortVal" class="pull-right" id="sortDropdown">
+        <option value="name">Name</option>
+        <option value="email">Email</option>
+        <option value="gender">Gender</option>
+        <option value="address">Address</option>
+    </select>
+</div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th class="text-center">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat = "employee in employees | orderBy: sortVal">
+                <td class="cursor-pointer" title="Click to edit record" ng-click="go(this)">{{employee.name}}</td>
+                <td class="cursor-pointer" title="Click to edit record" ng-click="go(this)">{{employee.email}}</td>
+                <td class="cursor-pointer" title="Click to edit record" ng-click="go(this)">{{employee.gender | uppercase}}</td>
+                <td class="cursor-pointer" title="Click to edit record" ng-click="go(this)">{{employee.address}}</td>
+                <td > 
+                    <button custom-alert="Are you sure you want to delete this?" ng-click="deleteRow(this)">Delete</button>
+                </td>
+            </tr>
+            <tr ng-show = "employees.length == 0"><td colspan="5" class="no-record">No record found</td></tr>
+        </tbody>
+    </table>
+</div>

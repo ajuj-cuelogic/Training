@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="tandem" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app/app.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" id="uname" href="#">Angular</a>
+      </div>
+      <ul class="nav navbar-nav pull-right">
+        <li><a ng-href="#/home">Home</a></li>
+        <li><a href="#/logout">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div ng-view></div>
+
+  <!-- <div>Angular seed app: v<span app-version></span></div> -->
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  
+  <!-- Common files to be loaded first -->
+  <script src="app/common/directives/index.js"></script>
+  <script src="app/common/directives/button.js"></script>
+  <script src="app/common/services/user.js"></script>
+  <script src="app/common/services/login.js"></script>
+  <script src="app/common/services/home.js"></script>  
+  <script src="app/common/services/myinterceptor.js"></script>  
+  <script src="app/common/services/index.js"></script>
+
+  <!-- User module -->
+  <script src="app/user/user.controller.js"></script>
+  <script src="app/user/user.route.js"></script>
+  <script src="app/user/index.js"></script>
+  
+  <!-- Home module -->
+  <script src="app/home/home.controller.js"></script>
+  <script src="app/home/home.route.js"></script>
+  <script src="app/home/index.js"></script>
+
+   <!-- Login module -->
+  <script src="app/login/login.controller.js"></script>
+  <script src="app/login/login.route.js"></script>
+  <script src="app/login/index.js"></script> 
+
+  <!-- Main module -->
+  <script src="app/app.js"></script>
+
+</body>
+</html>
